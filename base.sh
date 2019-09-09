@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+/usr/bin/python3.6 train.py 'ivan' \
+--secret_size 96 \
+--num_steps 150000 \
+--no_im_loss_steps 800 \
+--no_inter_loss_step 60000 \
+--lr 0.0001 \
+--rnd_trans_ramp 10000 \
+--l2_loss_ramp 15000 \
+--lpips_loss_ramp 15000  \
+--G_loss_ramp 15000 \
+--rnd_trans .1  \
+--secret_loss_scale 1.5 \
+--l2_loss_scale 2 \
+--lpips_loss_scale 5. \
+--G_loss_scale 0.5 \
+--y_scale 1 \
+--u_scale 100 \
+--v_scale 100 \
+--borders no_edge \
+--jpeg_quality 40 \
+--l2_edge_gain 100 \
+--l2_edge_ramp 10000 \
+--l2_edge_delay 100000
